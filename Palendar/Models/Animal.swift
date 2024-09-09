@@ -19,4 +19,7 @@ struct Dog: Animal {
   var url: String
 }
 
-//struct Cat: Animal {
+struct Cat: Animal {
+  var id: String
+  var url: String
+}

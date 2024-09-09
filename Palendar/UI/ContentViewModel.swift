@@ -25,9 +25,9 @@ class ContentViewModel: ObservableObject {
     self.palService = palService
   }
   
-  func getPals() {
+  func getPals(palType: PalFetchType = .both) {
     self.state = .loading
-    palService.fetchPals()
+    palService.fetchPals(palType: palType)
       .receive(on: DispatchQueue.main)
       .sink { completion in
         // check if error

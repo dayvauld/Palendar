@@ -11,7 +11,9 @@ import SwiftUI
 struct PalendarApp: App {
     var body: some Scene {
         WindowGroup {
-          ContentView(viewModel: ContentViewModel(palService: PalService()))
+          NavigationView {
+            ContentView(viewModel: ContentViewModel(palService: PalService()))
+          }
         }
     }
 }

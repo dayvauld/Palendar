@@ -9,6 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
   @ObservedObject var viewModel: ContentViewModel
+  @State var fetchDogs: Bool = true
+  @State var fetchCats: Bool = true
+  
+  var fetchType: PalFetchType {
+    if fetchDogs && fetchCats {
+      return .both
+    } else if fetchDogs {
+      return .dogs
+    } else {
+      return .cats
+    }
+  }
   
   var body: some View {
     ScrollView {
@@ -24,10 +36,40 @@ struct ContentView: View {
           Text("error")
         }
       }
+      .padding(.horizontal, 16)
     }
-    .padding()
+    .navigationTitle("Palendar")
+    .toolbar {
+      ToolbarItem(placement: .navigationBarTrailing) {
+        HStack(spacing: 0) {
+          Button(action: {
+            if fetchType == .dogs {
+              fetchCats = true
+            }
+            
+            fetchDogs.toggle()
+            viewModel.getPals(palType: fetchType)
+          }) {
+            Image(systemName: fetchDogs ? "dog.circle.fill" : "dog.circle")
+              .foregroundStyle(fetchDogs ? .mint : .red)
+          }
+          
+          Button(action: {
+            if fetchType == .cats {
+              fetchDogs = true
+            }
+            
+            fetchCats.toggle()
+            viewModel.getPals(palType: fetchType)
+          }) {
+            Image(systemName: fetchCats ? "cat.circle.fill" : "cat.circle")
+              .foregroundStyle(fetchCats ? .mint : .red)
+          }
+        }
+      }
+    }
     .onAppear {
-      viewModel.getPals()
+      viewModel.getPals(palType: fetchType)
     }
   }
   
@@ -80,5 +122,7 @@ struct ContentView: View {
 }
 
 #Preview {
-  ContentView(viewModel: ContentViewModel(palService: PalService()))
+  NavigationView {
+    ContentView(viewModel: ContentViewModel(palService: PalService()))
+  }
 }
