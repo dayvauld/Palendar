@@ -6,31 +6,60 @@
 //
 
 import XCTest
+import Combine
+
 @testable import Palendar
 
 final class PalendarTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+  var subscriptions: Set<AnyCancellable>!
+  
+  override func setUp() {
+    subscriptions = Set<AnyCancellable>()
+  }
+  
+  override func tearDown() {
+    subscriptions = nil
+    super.tearDown()
+  }
+  
+  func test_fetchPals() {
+    let expectation = XCTestExpectation(description: "Fetch all pals")
+    let mockAnimalService = MockAnimalService(throwFailure: false)
+    let viewModel = PalendarViewModel(palService: mockAnimalService)
+    viewModel.$state
+      .sink { state in
+        switch state {
+        case .loaded(let pals):
+          XCTAssertNotNil(pals)
+          expectation.fulfill()
+        default:
+          break
         }
+      }
+      .store(in: &subscriptions)
+    
+    viewModel.getPals()
+    wait(for: [expectation], timeout: 5)
+  }
+  
+  func test_loadingState() {
+    let mockAnimalService = MockAnimalService(throwFailure: false, mockDelay: true)
+    let viewModel = PalendarViewModel(palService: mockAnimalService)
+    viewModel.getPals()
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+      XCTAssertEqual(viewModel.state, .loading)
     }
+  }
 
+  func test_errorState() {
+    let mockAnimalService = MockAnimalService(throwFailure: true)
+    let viewModel = PalendarViewModel(palService: mockAnimalService)
+    
+    XCTAssertEqual(viewModel.state, .loading)
+    viewModel.getPals()
+    
+    DispatchQueue.main.async {
+      XCTAssertEqual(viewModel.state, .error)
+    }
+  }
 }

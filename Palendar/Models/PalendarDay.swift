@@ -7,12 +7,16 @@
 
 import Foundation
 
-struct PalendarDay {
+struct PalendarDay: Equatable {
   let id: String
   let date: Date
   let pal: Animal
 
   var isToday: Bool {
     Calendar.current.isDateInToday(date)
+  }
+  
+  static func == (lhs: PalendarDay, rhs: PalendarDay) -> Bool {
+    return lhs.id == rhs.id && lhs.date == rhs.date
   }
 }

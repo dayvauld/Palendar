@@ -9,7 +9,7 @@ import Foundation
 import Combine
 
 class PalendarViewModel: ObservableObject {
-  enum State {
+  enum State: Equatable {
     case loading
     case loaded([PalendarDay])
     case error
