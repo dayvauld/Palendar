@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DD795C22C8F8E01008E8EBD /* PalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795C12C8F8E01008E8EBD /* PalendarApp.swift */; };
+		3DD795C42C8F8E01008E8EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795C32C8F8E01008E8EBD /* ContentView.swift */; };
+		3DD795C62C8F8E03008E8EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD795C52C8F8E03008E8EBD /* Assets.xcassets */; };
+		3DD795C92C8F8E03008E8EBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD795C82C8F8E03008E8EBD /* Preview Assets.xcassets */; };
+		3DD795D32C8F8E03008E8EBD /* PalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795D22C8F8E03008E8EBD /* PalendarTests.swift */; };
+		3DD795DD2C8F8E03008E8EBD /* PalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795DC2C8F8E03008E8EBD /* PalendarUITests.swift */; };
+		3DD795DF2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795DE2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DD795CF2C8F8E03008E8EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD795B62C8F8E01008E8EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD795BD2C8F8E01008E8EBD;
+			remoteInfo = Palendar;
+		};
+		3DD795D92C8F8E03008E8EBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD795B62C8F8E01008E8EBD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD795BD2C8F8E01008E8EBD;
+			remoteInfo = Palendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DD795BE2C8F8E01008E8EBD /* Palendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD795C12C8F8E01008E8EBD /* PalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarApp.swift; sourceTree = "<group>"; };
+		3DD795C32C8F8E01008E8EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DD795C52C8F8E03008E8EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DD795C82C8F8E03008E8EBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DD795CE2C8F8E03008E8EBD /* PalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD795D22C8F8E03008E8EBD /* PalendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarTests.swift; sourceTree = "<group>"; };
+		3DD795D82C8F8E03008E8EBD /* PalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD795DC2C8F8E03008E8EBD /* PalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarUITests.swift; sourceTree = "<group>"; };
+		3DD795DE2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD795BB2C8F8E01008E8EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795CB2C8F8E03008E8EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795D52C8F8E03008E8EBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD795B52C8F8E01008E8EBD = {
+			isa = PBXGroup;
+			children = (
+				3DD795C02C8F8E01008E8EBD /* Palendar */,
+				3DD795D12C8F8E03008E8EBD /* PalendarTests */,
+				3DD795DB2C8F8E03008E8EBD /* PalendarUITests */,
+				3DD795BF2C8F8E01008E8EBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD795BF2C8F8E01008E8EBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD795BE2C8F8E01008E8EBD /* Palendar.app */,
+				3DD795CE2C8F8E03008E8EBD /* PalendarTests.xctest */,
+				3DD795D82C8F8E03008E8EBD /* PalendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD795C02C8F8E01008E8EBD /* Palendar */ = {
+			isa = PBXGroup;
+			children = (
+				3DD795C12C8F8E01008E8EBD /* PalendarApp.swift */,
+				3DD795C32C8F8E01008E8EBD /* ContentView.swift */,
+				3DD795C52C8F8E03008E8EBD /* Assets.xcassets */,
+				3DD795C72C8F8E03008E8EBD /* Preview Content */,
+			);
+			path = Palendar;
+			sourceTree = "<group>";
+		};
+		3DD795C72C8F8E03008E8EBD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3DD795C82C8F8E03008E8EBD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DD795D12C8F8E03008E8EBD /* PalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DD795D22C8F8E03008E8EBD /* PalendarTests.swift */,
+			);
+			path = PalendarTests;
+			sourceTree = "<group>";
+		};
+		3DD795DB2C8F8E03008E8EBD /* PalendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DD795DC2C8F8E03008E8EBD /* PalendarUITests.swift */,
+				3DD795DE2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift */,
+			);
+			path = PalendarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD795BD2C8F8E01008E8EBD /* Palendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD795E22C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "Palendar" */;
+			buildPhases = (
+				3DD795BA2C8F8E01008E8EBD /* Sources */,
+				3DD795BB2C8F8E01008E8EBD /* Frameworks */,
+				3DD795BC2C8F8E01008E8EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Palendar;
+			productName = Palendar;
+			productReference = 3DD795BE2C8F8E01008E8EBD /* Palendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD795CD2C8F8E03008E8EBD /* PalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD795E52C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "PalendarTests" */;
+			buildPhases = (
+				3DD795CA2C8F8E03008E8EBD /* Sources */,
+				3DD795CB2C8F8E03008E8EBD /* Frameworks */,
+				3DD795CC2C8F8E03008E8EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD795D02C8F8E03008E8EBD /* PBXTargetDependency */,
+			);
+			name = PalendarTests;
+			productName = PalendarTests;
+			productReference = 3DD795CE2C8F8E03008E8EBD /* PalendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DD795D72C8F8E03008E8EBD /* PalendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD795E82C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "PalendarUITests" */;
+			buildPhases = (
+				3DD795D42C8F8E03008E8EBD /* Sources */,
+				3DD795D52C8F8E03008E8EBD /* Frameworks */,
+				3DD795D62C8F8E03008E8EBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD795DA2C8F8E03008E8EBD /* PBXTargetDependency */,
+			);
+			name = PalendarUITests;
+			productName = PalendarUITests;
+			productReference = 3DD795D82C8F8E03008E8EBD /* PalendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD795B62C8F8E01008E8EBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					3DD795BD2C8F8E01008E8EBD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					3DD795CD2C8F8E03008E8EBD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3DD795BD2C8F8E01008E8EBD;
+					};
+					3DD795D72C8F8E03008E8EBD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 3DD795BD2C8F8E01008E8EBD;
+					};
+				};
+			};
+			buildConfigurationList = 3DD795B92C8F8E01008E8EBD /* Build configuration list for PBXProject "Palendar" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD795B52C8F8E01008E8EBD;
+			productRefGroup = 3DD795BF2C8F8E01008E8EBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD795BD2C8F8E01008E8EBD /* Palendar */,
+				3DD795CD2C8F8E03008E8EBD /* PalendarTests */,
+				3DD795D72C8F8E03008E8EBD /* PalendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD795BC2C8F8E01008E8EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD795C92C8F8E03008E8EBD /* Preview Assets.xcassets in Resources */,
+				3DD795C62C8F8E03008E8EBD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795CC2C8F8E03008E8EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795D62C8F8E03008E8EBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD795BA2C8F8E01008E8EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD795C42C8F8E01008E8EBD /* ContentView.swift in Sources */,
+				3DD795C22C8F8E01008E8EBD /* PalendarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795CA2C8F8E03008E8EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD795D32C8F8E03008E8EBD /* PalendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD795D42C8F8E03008E8EBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD795DF2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift in Sources */,
+				3DD795DD2C8F8E03008E8EBD /* PalendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DD795D02C8F8E03008E8EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD795BD2C8F8E01008E8EBD /* Palendar */;
+			targetProxy = 3DD795CF2C8F8E03008E8EBD /* PBXContainerItemProxy */;
+		};
+		3DD795DA2C8F8E03008E8EBD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD795BD2C8F8E01008E8EBD /* Palendar */;
+			targetProxy = 3DD795D92C8F8E03008E8EBD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DD795E02C8F8E03008E8EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD795E12C8F8E03008E8EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD795E32C8F8E03008E8EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Palendar/Preview Content\"";
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.Palendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DD795E42C8F8E03008E8EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Palendar/Preview Content\"";
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.Palendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DD795E62C8F8E03008E8EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.PalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Palendar";
+			};
+			name = Debug;
+		};
+		3DD795E72C8F8E03008E8EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.PalendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Palendar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Palendar";
+			};
+			name = Release;
+		};
+		3DD795E92C8F8E03008E8EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.PalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Palendar;
+			};
+			name = Debug;
+		};
+		3DD795EA2C8F8E03008E8EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9MSN9VC5A;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Steamclock.PalendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Palendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD795B92C8F8E01008E8EBD /* Build configuration list for PBXProject "Palendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD795E02C8F8E03008E8EBD /* Debug */,
+				3DD795E12C8F8E03008E8EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD795E22C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "Palendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD795E32C8F8E03008E8EBD /* Debug */,
+				3DD795E42C8F8E03008E8EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD795E52C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "PalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD795E62C8F8E03008E8EBD /* Debug */,
+				3DD795E72C8F8E03008E8EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD795E82C8F8E03008E8EBD /* Build configuration list for PBXNativeTarget "PalendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD795E92C8F8E03008E8EBD /* Debug */,
+				3DD795EA2C8F8E03008E8EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD795B62C8F8E01008E8EBD /* Project object */;
+}
