@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct ContentView: View {
-  @ObservedObject var viewModel: ContentViewModel
+struct PalendarView: View {
+  @ObservedObject var viewModel: PalendarViewModel
   @State var fetchDogs: Bool = true
   @State var fetchCats: Bool = true
   
@@ -23,22 +23,24 @@ struct ContentView: View {
   }
   
   var body: some View {
-    ScrollView {
-      LazyVStack {
+    VStack {
         switch viewModel.state {
         case .loading:
           ProgressView()
         case .loaded(let days):
-          ForEach(days, id: \.id) { day in
-            palCard(for: day)
+          ScrollView {
+            LazyVStack {
+              ForEach(days, id: \.id) { day in
+                palCard(for: day)
+              }
+            }
           }
         case .error:
-          Text("error")
+          errorView
         }
-      }
-      .padding(.horizontal, 16)
     }
-    .navigationTitle("Palendar")
+    .padding(.horizontal, 16)
+    .navigationTitle("Palendar 🐾")
     .toolbar {
       ToolbarItem(placement: .navigationBarTrailing) {
         HStack(spacing: 0) {
@@ -119,10 +121,33 @@ struct ContentView: View {
     )
     .clipShape(RoundedRectangle(cornerRadius: 10))
   }
+  
+  var errorView: some View {
+    VStack {
+      Image(systemName: "exclamationmark.triangle")
+      Text("Your pals are out on a walk, try back later")
+    }
+  }
 }
 
-#Preview {
+#Preview("Palendar") {
   NavigationView {
-    ContentView(viewModel: ContentViewModel(palService: PalService()))
+    PalendarView(viewModel: PalendarViewModel(palService: PalService()))
+  }
+}
+
+#Preview("Error State") {
+  let mockedPalService = MockAnimalService(throwFailure: true)
+  return NavigationView {
+    PalendarView(
+      viewModel: PalendarViewModel(palService: mockedPalService))
+  }
+}
+
+#Preview("Delayed State") {
+  let mockedPalService = MockAnimalService(mockDelay: true)
+  return NavigationView {
+    PalendarView(
+      viewModel: PalendarViewModel(palService: mockedPalService))
   }
 }

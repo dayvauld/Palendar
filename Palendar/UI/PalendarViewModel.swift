@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class ContentViewModel: ObservableObject {
+class PalendarViewModel: ObservableObject {
   enum State {
     case loading
     case loaded([PalendarDay])
@@ -30,8 +30,8 @@ class ContentViewModel: ObservableObject {
     palService.fetchPals(palType: palType)
       .receive(on: DispatchQueue.main)
       .sink { completion in
-        // check if error
-        // state = .error
+        guard case .failure(_) = completion else { return }
+        self.state = .error
       } receiveValue: { [weak self] pals in
         guard let self = self else { return }
         // map array of dogs to array of PalendarDays

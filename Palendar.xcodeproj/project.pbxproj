@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3DD795C22C8F8E01008E8EBD /* PalendarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795C12C8F8E01008E8EBD /* PalendarApp.swift */; };
-		3DD795C42C8F8E01008E8EBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795C32C8F8E01008E8EBD /* ContentView.swift */; };
+		3DD795C42C8F8E01008E8EBD /* PalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795C32C8F8E01008E8EBD /* PalendarView.swift */; };
 		3DD795C62C8F8E03008E8EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD795C52C8F8E03008E8EBD /* Assets.xcassets */; };
 		3DD795C92C8F8E03008E8EBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD795C82C8F8E03008E8EBD /* Preview Assets.xcassets */; };
 		3DD795D32C8F8E03008E8EBD /* PalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795D22C8F8E03008E8EBD /* PalendarTests.swift */; };
@@ -16,8 +16,10 @@
 		3DD795DF2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795DE2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift */; };
 		3DD795EF2C8F9376008E8EBD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795EE2C8F9376008E8EBD /* Animal.swift */; };
 		3DD795F12C8F93C9008E8EBD /* PalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F02C8F93C9008E8EBD /* PalService.swift */; };
-		3DD795F32C8F95B5008E8EBD /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F22C8F95B5008E8EBD /* ContentViewModel.swift */; };
+		3DD795F32C8F95B5008E8EBD /* PalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F22C8F95B5008E8EBD /* PalendarViewModel.swift */; };
 		3DD795F52C8F996A008E8EBD /* PalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F42C8F996A008E8EBD /* PalendarDay.swift */; };
+		3DD795F72C8FA8B1008E8EBD /* MockAnimalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F62C8FA8B1008E8EBD /* MockAnimalService.swift */; };
+		3DD795F82C8FA9D7008E8EBD /* MockAnimalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F62C8FA8B1008E8EBD /* MockAnimalService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,7 @@
 /* Begin PBXFileReference section */
 		3DD795BE2C8F8E01008E8EBD /* Palendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Palendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD795C12C8F8E01008E8EBD /* PalendarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarApp.swift; sourceTree = "<group>"; };
-		3DD795C32C8F8E01008E8EBD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3DD795C32C8F8E01008E8EBD /* PalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarView.swift; sourceTree = "<group>"; };
 		3DD795C52C8F8E03008E8EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD795C82C8F8E03008E8EBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3DD795CE2C8F8E03008E8EBD /* PalendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PalendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,8 +52,9 @@
 		3DD795DE2C8F8E03008E8EBD /* PalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3DD795EE2C8F9376008E8EBD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		3DD795F02C8F93C9008E8EBD /* PalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalService.swift; sourceTree = "<group>"; };
-		3DD795F22C8F95B5008E8EBD /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3DD795F22C8F95B5008E8EBD /* PalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarViewModel.swift; sourceTree = "<group>"; };
 		3DD795F42C8F996A008E8EBD /* PalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarDay.swift; sourceTree = "<group>"; };
+		3DD795F62C8FA8B1008E8EBD /* MockAnimalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimalService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD795D22C8F8E03008E8EBD /* PalendarTests.swift */,
+				3DD795F62C8FA8B1008E8EBD /* MockAnimalService.swift */,
 			);
 			path = PalendarTests;
 			sourceTree = "<group>";
@@ -149,8 +153,8 @@
 		3DD795EC2C8F8ED2008E8EBD /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				3DD795C32C8F8E01008E8EBD /* ContentView.swift */,
-				3DD795F22C8F95B5008E8EBD /* ContentViewModel.swift */,
+				3DD795C32C8F8E01008E8EBD /* PalendarView.swift */,
+				3DD795F22C8F95B5008E8EBD /* PalendarViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -293,11 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD795C42C8F8E01008E8EBD /* ContentView.swift in Sources */,
+				3DD795C42C8F8E01008E8EBD /* PalendarView.swift in Sources */,
+				3DD795F82C8FA9D7008E8EBD /* MockAnimalService.swift in Sources */,
 				3DD795F12C8F93C9008E8EBD /* PalService.swift in Sources */,
 				3DD795C22C8F8E01008E8EBD /* PalendarApp.swift in Sources */,
 				3DD795EF2C8F9376008E8EBD /* Animal.swift in Sources */,
-				3DD795F32C8F95B5008E8EBD /* ContentViewModel.swift in Sources */,
+				3DD795F32C8F95B5008E8EBD /* PalendarViewModel.swift in Sources */,
 				3DD795F52C8F996A008E8EBD /* PalendarDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DD795D32C8F8E03008E8EBD /* PalendarTests.swift in Sources */,
+				3DD795F72C8FA8B1008E8EBD /* MockAnimalService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

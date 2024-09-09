@@ -12,7 +12,7 @@ struct PalendarApp: App {
     var body: some Scene {
         WindowGroup {
           NavigationView {
-            ContentView(viewModel: ContentViewModel(palService: PalService()))
+            PalendarView(viewModel: PalendarViewModel(palService: PalService()))
           }
         }
     }
