@@ -17,6 +17,7 @@
 		3DD795EF2C8F9376008E8EBD /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795EE2C8F9376008E8EBD /* Animal.swift */; };
 		3DD795F12C8F93C9008E8EBD /* PalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F02C8F93C9008E8EBD /* PalService.swift */; };
 		3DD795F32C8F95B5008E8EBD /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F22C8F95B5008E8EBD /* ContentViewModel.swift */; };
+		3DD795F52C8F996A008E8EBD /* PalendarDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD795F42C8F996A008E8EBD /* PalendarDay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		3DD795EE2C8F9376008E8EBD /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		3DD795F02C8F93C9008E8EBD /* PalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalService.swift; sourceTree = "<group>"; };
 		3DD795F22C8F95B5008E8EBD /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		3DD795F42C8F996A008E8EBD /* PalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarDay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				3DD795EE2C8F9376008E8EBD /* Animal.swift */,
+				3DD795F42C8F996A008E8EBD /* PalendarDay.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				3DD795C22C8F8E01008E8EBD /* PalendarApp.swift in Sources */,
 				3DD795EF2C8F9376008E8EBD /* Animal.swift in Sources */,
 				3DD795F32C8F95B5008E8EBD /* ContentViewModel.swift in Sources */,
+				3DD795F52C8F996A008E8EBD /* PalendarDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
