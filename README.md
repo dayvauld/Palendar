@@ -19,5 +19,7 @@ A couple areas for improvement:
 - Storing URLs/domains and other important strings in a Constants file or in build settings/.plist. 
 
 <hr>
-![Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-09 at 17 09 05](https://github.com/user-attachments/assets/fcd7295a-fc8a-4525-a7a9-85aff260a982)
-![Simulator Screenshot - Clone 1 of iPhone 15 Pro - 2024-09-09 at 17 09 11](https://github.com/user-attachments/assets/673f198a-ccd8-499b-ba84-9fa3dabb8306)
+<img src="https://github.com/user-attachments/assets/fcd7295a-fc8a-4525-a7a9-85aff260a982" width="200">
+<img src="https://github.com/user-attachments/assets/3db313ca-7083-408b-befc-ef20f9cefc1c" width="200">
+<img src="https://github.com/user-attachments/assets/673f198a-ccd8-499b-ba84-9fa3dabb8306" width="200">
+
