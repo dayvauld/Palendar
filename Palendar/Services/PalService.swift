@@ -19,7 +19,6 @@ protocol AnimalService {
 }
 
 class PalService: AnimalService {
-  
   private let baseUrl = "https://api.thedogapi.com"
   private let dogImagePath = "/v1/images/search?limit=10"
   
@@ -45,7 +44,9 @@ class PalService: AnimalService {
       return getCats()
     }
   }
-  
+}
+
+private extension PalService {
   func getDogs() -> AnyPublisher<Pals, any Error> {
     let url = URL(string: baseUrl.appending(dogImagePath))!
     return urlSession.dataTaskPublisher(for: url)

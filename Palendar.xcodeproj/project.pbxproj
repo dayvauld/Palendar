@@ -55,6 +55,7 @@
 		3DD795F22C8F95B5008E8EBD /* PalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarViewModel.swift; sourceTree = "<group>"; };
 		3DD795F42C8F996A008E8EBD /* PalendarDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalendarDay.swift; sourceTree = "<group>"; };
 		3DD795F62C8FA8B1008E8EBD /* MockAnimalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAnimalService.swift; sourceTree = "<group>"; };
+		3DD795F92C8FBF3B008E8EBD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 		3DD795B52C8F8E01008E8EBD = {
 			isa = PBXGroup;
 			children = (
+				3DD795F92C8FBF3B008E8EBD /* README.md */,
 				3DD795C02C8F8E01008E8EBD /* Palendar */,
 				3DD795D12C8F8E03008E8EBD /* PalendarTests */,
 				3DD795DB2C8F8E03008E8EBD /* PalendarUITests */,

@@ -32,47 +32,53 @@ struct PalendarView: View {
             LazyVStack {
               ForEach(days, id: \.id) { day in
                 palCard(for: day)
+                  .shadow(radius: 5, x: 2, y: 5)
               }
+              .padding(.horizontal, 16)
             }
           }
         case .error:
           errorView
         }
     }
-    .padding(.horizontal, 16)
     .navigationTitle("Palendar 🐾")
     .toolbar {
-      ToolbarItem(placement: .navigationBarTrailing) {
-        HStack(spacing: 0) {
-          Button(action: {
-            if fetchType == .dogs {
-              fetchCats = true
-            }
-            
-            fetchDogs.toggle()
-            viewModel.getPals(palType: fetchType)
-          }) {
-            Image(systemName: fetchDogs ? "dog.circle.fill" : "dog.circle")
-              .foregroundStyle(fetchDogs ? .mint : .red)
-          }
-          
-          Button(action: {
-            if fetchType == .cats {
-              fetchDogs = true
-            }
-            
-            fetchCats.toggle()
-            viewModel.getPals(palType: fetchType)
-          }) {
-            Image(systemName: fetchCats ? "cat.circle.fill" : "cat.circle")
-              .foregroundStyle(fetchCats ? .mint : .red)
-          }
-        }
-      }
+      toolbarView
+    }
+    .refreshable {
+      viewModel.getPals(palType: fetchType)
     }
     .onAppear {
       viewModel.getPals(palType: fetchType)
     }
+  }
+  
+  var toolbarView: some View {
+      HStack(spacing: 0) {
+        Button(action: {
+          if fetchType == .dogs {
+            fetchCats = true
+          }
+          
+          fetchDogs.toggle()
+          viewModel.getPals(palType: fetchType)
+        }) {
+          Image(systemName: fetchDogs ? "dog.circle.fill" : "dog.circle")
+            .foregroundStyle(fetchDogs ? .mint : .red)
+        }
+        
+        Button(action: {
+          if fetchType == .cats {
+            fetchDogs = true
+          }
+          
+          fetchCats.toggle()
+          viewModel.getPals(palType: fetchType)
+        }) {
+          Image(systemName: fetchCats ? "cat.circle.fill" : "cat.circle")
+            .foregroundStyle(fetchCats ? .mint : .red)
+        }
+      }
   }
   
   func palCard(for day: PalendarDay) -> some View {
@@ -126,6 +132,11 @@ struct PalendarView: View {
     VStack {
       Image(systemName: "exclamationmark.triangle")
       Text("Your pals are out on a walk, try back later")
+      Button("Retry") {
+        viewModel.getPals(palType: fetchType)
+      }
+      .padding()
+      .buttonStyle(.borderedProminent)
     }
   }
 }
